@@ -1,4 +1,7 @@
 # Ideas
+This a brainstorm of ideas for our third year engineering project.
+We would like to create something that intersects technology with human interaction.
+
 ___________________________
 ## Map
 - Twitter? Facebook? Instagram?
