@@ -1,7 +1,7 @@
 # ELEC 3907
 ## Third year engineering project
 
-This is a term long project were we work in groups of 4-6 to design and build a finished product. This allows us to use the technical knowledge from school work, coop experience, and our interests to design something from start to finish.
+This is a term long project where we work in groups of 4-6 to design and build a finished product. This allows us to use the technical knowledge from school work, coop experience, and our interests to design something from start to finish.
 
 ## Light and Art
 
