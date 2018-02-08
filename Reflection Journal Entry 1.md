@@ -1,10 +1,6 @@
-# ELEC 3907 Reflection Journal
+# Reflection 1
 
-**Group 2I**
-
-## Reflection 1
-
-### JeeNode
+## JeeNode
 
 Due to various reasons – I was in Vancouver – everyone on our team missed the Monday lab section, and thus we were behind from the beginning. We did not let that deter us and on Wednesday the TAs explained to us how to solder components onto a PCB. They explained to us how it was important to heat up the board, as well the component leads so that the solder would stick to both and provide support; if this was not done properly then the solder would not create a good contact, or worse the component might fall out.
 
