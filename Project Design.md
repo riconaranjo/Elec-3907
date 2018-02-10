@@ -22,8 +22,6 @@ We are designing a system that is able to track visitors to the <a href="https:/
 
 #### Circuit
 
-#### Pin Expansion
-
 #### Algorithm
 
 ### Controller Interconnection
