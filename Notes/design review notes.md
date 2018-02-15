@@ -4,6 +4,7 @@ Friday 16th, sixth group
 
 - Show the approach
 - Beyond the outline
+- Obstacles
 
 ## What
 

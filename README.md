@@ -16,6 +16,7 @@ We are designing a system that is able to track visitors to the Gather-Ring, and
 - Send this data to the LED light controllers
 - Send this data at a frequency of no slower than 2 seconds
 - Must be weatherproof year-round [operate between 40ºC and -30ºC]
+- Should start running automatically on start up
 
 ## Team Roles and Responsibilities
 
@@ -39,13 +40,16 @@ These are the current responsibities of each team member. They will be updated a
 - Software for Arduino to read from Sensors
   - Noise Reduction from sensor data
 - Communication link between Arduino and Raspberry Pi
+  - USB link with serial output
 - Software that transforms Cartesian coordinates to a format that corresponds to LED strips
+  - Our LEDs laid out in rectangular perimeter
   - Other team's LED light strips are organized in spiral layout
 
 #### Huzaifah Sulaiman + Yusuf Adam
 
 - Raspberry Pi software integration
-  - making sure raspberry pi runs software on launch [when power is connected]
+  - Making sure raspberry pi runs software on launch [when power is connected]
+  - Software should run on start up
 - Software to light up LED light strips
   - Given cartesian locations, update the lights to track persons
 
