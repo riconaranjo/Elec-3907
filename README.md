@@ -14,7 +14,7 @@ We are designing a system that is able to track visitors to the Gather-Ring, and
 
 - Track in between 1 and 4 visitors within the inner region of the Gather-Ring
 - Send this data to the LED light controllers
-- Send this data at a frequency of no slower than 2 seconds
+- Send this data at a frequency of no slower than 1 seconds
 - Must be weatherproof year-round [operate between 40ºC and -30ºC]
 - Should start running automatically on start up
 
@@ -65,3 +65,4 @@ These are the current responsibities of each team member. They will be updated a
 - Software to take averaged sensor data and coordinate location of visitors
   - Three sensor values to triangulate position
   - Most likely to be run on Raspberry PI
+- Transmit coordinate to other team's controller to light up corresponding LED
