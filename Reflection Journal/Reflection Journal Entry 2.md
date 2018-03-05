@@ -18,9 +18,11 @@ Good design is not a clearly defined idea, but instead is a measure of how well 
 
 ## Miscommunication
 
-When we initially met with professor Manuel Báez, he gave some ideas about what he initially wanted the Gather-Ring to look like. He wanted LED strips to be added the crossbeams with more patterns, so that on certain days they would like up in recognition of some event or holiday. We told him we had the idea to install LED lights across the chains spanning over the centre of the ring, and then create patterns on that. Unfortunately when he met with another group, he mistakenly told them that they should work on LEDs across the chains.
+When we initially met with professor Manuel Báez, he gave some ideas about what he initially wanted the Gather-Ring to look like. He wanted LED strips to be added the crossbeams with more patterns, so that on certain days they would like up in recognition of some event or holiday. We told him we had the idea to install LED lights across the chains spanning over the centre of the ring, and then create patterns on that. Unfortunately when he met with another group, he mistakenly told them that they should work on LEDs across the chains. Next time we should have been more clear on what we were planning on doing because we made it sound like we were undecided. If we had sent him an email with a clear outline of our plans this may have been avoided.
 
 During the project proposal presentations, we found out that the other group was attempting what we had set out to do. I brought this up with team and we had a long discussion about whether we wanted to compete against them, or pivot and find a way to work together. If we competed, we would have the possibility of having or project proposal rejected and have to pivot anyways, and we decided it would be more interesting to work together, and create an even better project. If we create a worthy project, we would then be able to propose it to the city and it would be installed on the art installation.
+
+This outcome although is not what we had intended, seems to be a better result since we took a more challenging project, which also interests the team more. This means we are able to push ourselves to learn more, so that we can have a successful project, while enjoying the process more. It is always easier to finish a team project if the team is motivated.
 
 ## Pivoting
 
@@ -28,7 +30,7 @@ Initially, we wanted to install the LED lights and then if we have time add sens
 
 Considering these two options, we had to deside how accurate the tracking should be. The IR sensors would be able to track multiple users with very high resolution, but at a higher price and more challenging integration. The ultrasound sensors could be arranged together side-by-side to triangulate the location of one user, but being much cheaper and easier to integrate. Since we did not need very high tracking resolution, our skill level, and our limited budget we decided it would be best to use an array of ultrasonic sensors.
 
-Having the team work together to come up with our own idea has helped us, because the team members are more motivated to work on a project they see as their own.
+Having the team work together to come up with our own idea has helped us, because the team members are more motivated to work on a project they see as their own. It was important to let everyone in the team contribute; if I had lead the conversation and only allowed my ideas to be discussed then we would undoubtably be worse of. Nelson Mandela once said that leaders should always speak last, that way everyone's ideas would be heard.
 
 ## Presentation
 
