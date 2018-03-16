@@ -2,6 +2,9 @@
 # use python 2
 import serial
 
+from convert import *
+from lights import *
+
 arduino = serial.Serial('/dev/ttyACM0', 9600)
 
 print("press ctrl + c to quit")
@@ -9,7 +12,7 @@ while true
     # read data from Arduino
     input = arduino.readline()
     if(input == "")
-        time.sleep(0.2)
+        # time.sleep(0.2)
         continue
     
     # parse data
