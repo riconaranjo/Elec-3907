@@ -3,7 +3,6 @@
 ## Team Members
 
 - Federico Naranjo
-- Huzaifah Sulaiman
 - Ibrahim Bishtawi
 - Jake Godin
 - Peter Freundorfer
@@ -21,9 +20,6 @@ These are the current responsibities of each team member. They will be updated a
   - Noise Reduction from sensor data
 - Communication link between Arduino and Raspberry Pi
   - USB link with serial output
-- Software that transforms Cartesian coordinates to a format that corresponds to LED strips
-  - Our LEDs laid out in rectangular perimeter
-  - Other team's LED light strips are organized in spiral layout
 
 ### Huzaifah Sulaiman + Yusuf Adam
 
