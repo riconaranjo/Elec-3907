@@ -14,7 +14,7 @@
 
 ## Systems Overview
 
-Summarize about how each component works.
+Summarize how each component works.
 
 [image for system here]
 
