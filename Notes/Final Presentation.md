@@ -66,7 +66,7 @@ Tracking would be more accurate:
 
 - with using more ultrasonic sensors
 - improving our algorithms
-- using infrared sensors, or some other more accurat e technology
+- using infrared sensors, or some other more accurate technology
 
 We wanted to add more patterns, like eminating from the person's location
 
