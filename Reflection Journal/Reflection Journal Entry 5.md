@@ -1,0 +1,43 @@
+# Reflection 5
+
+`Looking at your project, as it currently is, critically assess it. What changes in the design would you make to your project to improve it and explain why?`
+
+## Getting here
+
+At the start of this semester I had no idea how much I would learn, nor the challenges I would face during my third year project. I met my team members in early January, and none of us had any idea what we should do as a project. I suggested that we work with the Architecture professor Manuel Báez on expanding the Gather-Ring art installation; we proposed creating an interactive space where the overhanging lights would seem to follow visitors as they walked around the inside of the Gather-Ring.
+
+We created a proof of concept that uses ultrasonic sensors to track objects within a confined space. This sounds simple, but in practice turned out to be very challenging to implement, not least of which because we had little to no experience with microcontrollers, python, or ultrasonic sensors before.
+
+## What we made
+
+Our proof of concept consists of two ultrasonic sensor arrays controlled by an Arduino Uno microcontroller. This microcontroller lightly processes the sensor data, and transmits it to a Raspberry Pi 3 Model B. The Raspberry Pi then uses an algorithm to find the location of any tracked objects within the ring area, and turn on the corresponding lights on an Adafruit LED strip.
+
+## Frustrations
+
+Although our proof of concept was successful it is not nearly perfect and would require much refinement before even a prototype would be built. It also did not fulfill all of our initial goals. We intially wanted to have  intricate light shows, and have the lights appear to eminate from the user's location. We also thought we would have more accurate and robust tracking of objects.
+
+The main frustration limiting the lights software was the fact that the only library that worked with a Raspbperry Pi, was designed for an outdated version and did not function correctly with newer hardware. This meant that half the team was unable to work for several weeks because they were unable to overcome this issue; it was eventually resolved partly by disabling the soundcard. This is not an idea solution and is more of a workaround. In hindsight, it would have been better to only use the Arduino to control the ultrasonic sensors, perform the triangulation calculations, and control the LED strip. This would simpify the design, and improve the integration of the currently discrete subsystems.
+
+The main issue limiting the triangulation algorithm was inexperience in software development. This meant that progress in debugging the algrothim and refining it was slower than anticipated. The requirements for this algorithm were very open-ended as well. If I had given more concrete expectations in writing for this algorithm I think this process would have gone smoother since the team member was unsure of what was expected of him. I tried giving team requirements but they were very high-level and did not seem to help the team much. If I could repeat this project, I would assign two people to work on this algorithm together since this would both allow them more ability to overcome challenges, but also ensure that no team member is working alone and thus they feel they can waste time since no one else on the team can see them. I often found when this happened the team members would be on their phones during the lab period.
+
+The main frustration limiting the hardware was our inexperience with microcontrollers and digital circuits. If was often difficult to debug the circuits since all the components and their behaviours were new to us. We attempted to save pins on the our Arduino using shift registers or diodes, but found it to be too challenging and not worth the effort given the short length of this project; we did intend to come back to these ideas but were unable to before the term ended. We prioritized getting a functioning project over complexity or efficiency of our design.
+
+Another major frustration was the budgetary constraints, since our LEDs cost $40 for one strip. This would have been fine if the library worked fine, but it did not. We should have either moved all computation onto the Arduino, or not have bought the LED strip. We could have gotten the same functionality and had more hardware tasks if we had wired LEDs ourselves. This would have freed up more money for other components, and more importantly made the tasks more even between hardware and software.
+
+The most general frustration throughout the term was the lack of effort from some of my team members; some were often late and when they did show up would often work on other class assignments or spend much of the period on their phones. I tried to fix this by encouraging my team members to show up on time, and reminding them what their tasks were. I think although this is fine approach, it does not address the issue that they simply did not feel invested in the success of the project. I should have tried harder to have them see the project as 'their' project. As I took on more tasks in order to ensure we had a working proof of concept I alienated some of the team members as they saw it more as mine than theirs, this is the problem of seeking to control all aspects of the project as well. In the future I should focus on giving more clear requirements and expectations for each team member, work with them to create a clear [but flexible] timeline so they have deadlines and don't have to rely solely on me to keep them on track.
+
+## Improvements
+
+If I could redesign this project I would change many aspects. First and foremost would be replace the Raspberry Pi with the Arduino already in the system. This would simplify the code since it would only be running on one device, and remove the need for a communication link between the software components of the overall system. This Arduino would probably be the Arduino Mega since it has more pins as well. Additionally, this would solve the issue of the outdated Adafruit LED strip library since the Arduino library continues to works as intended with newer Arduino hardware.
+
+Secondly, using a larger area to track would improve the accuracy of the sensors since the arcs of each sensor are very limited at close ranges. Adding more sensors to each sensor array would improve the accuracy and reduce the blind spots for the tracking areas.
+
+Relating to this, the tracking accuracy could be improved solely by refining the truangulation algorithm. It works very well considering the variation in the data, and the programming experience of the team member who wrote it. If we were to improve it, it would be add memory to the algorithm so the previous values would influence the current calculations, reducing the jitteriness of the lights. Additionally refining the boundary condition logic for unexpected values would ensure that the lights work as expected even when getting unreliable readings from the ultrasonic sensors. Additionally, improving to use all sensor values when tracking persons, would dramatically increase the performance and accuracy of the algorithm but would be a very complicated undertaking.
+
+To improve the lights functionality we could either wire LEDs ourselves if wanted to reduce costs, or used an Arduino instead of the Raspberry Pi. We had access to the JeeNode (Arduino clone) which we could have used but we did not consider this. If we had, it would have required rewritting most of the code so perhaps it would not have been feasible. We could also spend more time refining the lights software and adding memory so that lights persists between readings. We could add more intricate logic so there would be a disappearing trail behind visitors as they walked through.
+
+## Closing
+
+In conclusion, I consider this project a success. I personally learned a great deal about project design, how to better coordinate a team to work together, and gained a lot of experience with microcontrollers and linux on the Raspberry Pi.
+
+We built an interesting project by working together and communicating through technical challenges. There was no design decision that was made without first consulting every team member, and often times it was not my ideas that were implemented. This was our project and we all contributed to it. I am very proud of our Gather-Ring ultrasonic tracking proof of concept.

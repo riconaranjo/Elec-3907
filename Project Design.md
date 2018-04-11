@@ -1,31 +1,66 @@
-# **Project Overview**
+# **Project Report**
 
-We are designing a system that is able to track visitors to the <a href="https://carleton.ca/our-stories/story/gather-ring/">Gather-Ring</a>, and then use their location to create a unique pattern that updates as they move around. We hope this adds a whole new level of interactivity for the community with this existing installation. We will be using an array of ultrasonic sensors installed underneath the benches pointing inwards to track the visitors.
+We wanted to create an interactive space within the [Gather-Ring](href="https://carleton.ca/our-stories/story/gather-ring/") by having the lights follow the visitors as they walk around the space.
 
-## Design Requirements
+We designed a system that uses ultrasonic sensors to detect and track the visitors, along with an algorithm to convert the data from multiple sensors into locations, which is then used to control the lights. The sensors would be installed underneath the benches so as to not impact the aesthetic of the current installation. We hope this system will be able to create a new interactive space for residents and tourists to enjoy.
 
-## System Overview
+## Executive Summary
 
-### Ultasonic Sensor Array
+// Summarize report: Peter
+[done]
 
-### Controllers
+## Table of Contents
 
-#### Arduino Uno
+// self-explanatory: **Rico**
+[done]
 
-#### Raspberry PI 3 Model B
+## Introduction
 
-### LED Lights
+// overview, goal: **Rico**
+[done]
 
-## Prototype
+## Design & Implementation
 
-### Tracking
+// Design overview: **Rico**
+[done]
 
-#### Circuit
+// Ultrasonic sensors: Peter + Ibrahim
+[done]
 
-#### Algorithm
+// Arduino: **Rico**
+[done]
 
-### Controller Interconnection
+// Raspberry Pi: **Rico**
+[done]
 
-## Challenges
+// Main Program: Adam
+[done]
+
+// Algorithm: Jake
+
+// LED control software: Adam
+[done]
+
+## Specifications
+
+// Ultrasound sensors: Ibrahim
+[done]
+
+// Speed of tracking: **Rico**
+[done]
+
+// Detection area + number of targets: Jake
+
+// LED colour and not being able to light up individual LEDs: Adam
+[done]
+
+// Power: Peter
+[done]
 
 ## Conclusion
+
+// conclusion of project: **Rico**
+[done]
+
+// any future work we will / would do: **Rico**
+[done]

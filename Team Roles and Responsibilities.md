@@ -21,17 +21,15 @@ These are the current responsibities of each team member. They will be updated a
 - Communication link between Arduino and Raspberry Pi
   - USB link with serial output
 
-### Huzaifah Sulaiman + Yusuf Adam
+### Yusuf Adam
 
 - Raspberry Pi software integration
-  - Making sure raspberry pi runs software on launch [when power is connected]
-  - Software should run on start up
 - Software to light up LED light strips
   - Given cartesian locations, update the lights to track persons
 
 ### Ibrahim Bishtawi + Peter Freundorfer
 
-- Designing and building Prototype model
+- Designing and building Proof of Concept model
 - Create circuit designs and design schematics
   - To help us build it and debug
   - For presentations and reports
@@ -40,4 +38,4 @@ These are the current responsibities of each team member. They will be updated a
 
 - Software to take averaged sensor data and coordinate location of visitors
   - Three sensor values to triangulate position
-  - Most likely to be run on Raspberry PI
+  - Most likely to be run on Raspberry Pi

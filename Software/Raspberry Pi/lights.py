@@ -7,15 +7,15 @@ import signal
 import sys
 
 # LED strip configuration:
-LED_COUNT      = 80    # Number of LED pixels.
-LED_PIN        = 18      # GPIO pin connected to the pixels (18 uses PWM!).
-#LED_PIN        = 10      # GPIO pin connected to the pixels (10 uses SPI /dev/spidev0.0).
-LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
-LED_DMA        = 10      # DMA channel to use for generating signal (try 10)
-LED_BRIGHTNESS = 100     # Set to 0 for darkest and 255 for brightest
-LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
-LED_CHANNEL    = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
-LED_STRIP      = ws.WS2811_STRIP_GRB   # Strip type and colour orderingfrom neopixel import*
+LED_COUNT       = 80     # Number of LED pixels.
+LED_PIN         = 18     # GPIO pin connected to the pixels (18 uses PWM!).
+#LED_PIN        = 10     # GPIO pin connected to the pixels (10 uses SPI /dev/spidev0.0).
+LED_FREQ_HZ     = 800000 # LED signal frequency in hertz (usually 800 kHz)
+LED_DMA         = 10     # DMA channel to use for generating signal (try 10)
+LED_BRIGHTNESS  = 100    # Set to 0 for darkest and 255 for brightest
+LED_INVERT      = False  # True to invert the signal (when using NPN transistor level shift)
+LED_CHANNEL     = 0      # set to '1' for GPIOs 13, 19, 41, 45 or 53
+LED_STRIP       = ws.WS2811_STRIP_GRB   # Strip type and colour orderingfrom neopixel import*
 
 maxLimit = 45 # in cm
 
@@ -36,10 +36,8 @@ strip.begin()
 def lights(x1, y1, x2, y2) :
     opt_parse()
     
-    
     # turn off all LEDs
     ledsOff()
-    
 
     # 2 distinct points
     if(x1 != -1 and y1 != -1 and x2 != -1 and y2 != -1) :
@@ -66,7 +64,7 @@ def lights(x1, y1, x2, y2) :
 
 # this is used by neopixel library
 def signal_handler(signal, frame):
-    colorWipe(strip, Color(0,0,0))
+    ledsOff() 
     sys.exit(0)
 
 # this is used by neopixel library
